@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.App{
+  width: 80%;
+  margin: auto;
+}
+
+button.invisible{
+  position: relative;
+  right: 0px;
+  background: transparent;
+  border: none;
+  color: rgb(17, 17, 188);
+  cursor: pointer;
+}
+.top-bar{
+  border: 2px solid #ddd;
+  margin-top: 25px;
+  padding: 10px;
+}
+.top-bar h2{
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 0.8px;
+}
+.top-bar p{
+  letter-spacing: 0.5px;
+}
+.search-grid{
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.search-left{
+  /* position: fixed; */
+  padding: 15px;
+}
+.search-result-list{
+  padding: 15px;
+  padding-left: 30px;
+}
+.search-result-list .right-btn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search-result-list .right-btn button{
+  padding: 2px
+}
+.search-left h2{
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.parameter-list{
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+.parameter-list .list-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.parameter-list .list-head h3{
+  font-weight: 400;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  font-family: sans-serif;
+}
+.parameter-list .list-head button{
+  height: max-content;
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+  /* border: 2px solid red; */
+}
+.parameter-list .search-input{
+  padding: 5px;
+  width: 90%;
+  margin: 15px auto;
+  border: 2px solid black;
+}
+.parameter-list .parameter-list-item .list-item{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.parameter-list-item .list-item h4{
+  font-weight: 400;
+  font-size: 16px;
+}
+.parameter-list-item .list-item p{
+  font-size: 16px;
+  font-style: italic;
+}
+
+.search-result-item{
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+.search-result-item h3{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding-bottom: 2px;
+  color: rgb(17, 17, 188);
+  width: fit-content;
+  border-bottom: 2px solid rgba(26, 26, 223, 0.32);
+  margin-bottom: 3px;
+}
+.search-result-item h6{
+  font-weight: 400;
+  font-size: 13px;
+  font-family: 'Nato sans', sans-serif;
+  letter-spacing: 0.1px;
+}
+.search-result-item p.description{
+  margin-top: 15px;
+  font-size: 17px;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: black;
+}
+.search-result-item p.description.show-more{
+  display: block;
+  overflow: auto;
+  text-align: justify;
+}
